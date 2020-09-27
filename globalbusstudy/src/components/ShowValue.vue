@@ -16,7 +16,7 @@
             changeValue(){
                 globalBus.$on('message_fromPassageComponent',function (message) {
                     console.log("aaaaaaaaaa");
-                    $("#passage").text(message);
+                    $("#passage").text(message[0]+message[1]);
                 })
             }
         }

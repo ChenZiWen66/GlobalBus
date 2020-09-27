@@ -13,7 +13,7 @@
         name: "PassageComponent",
         methods:{
             sentMessage(message){
-                globalBus.$emit('message_fromPassageComponent',message);
+                globalBus.$emit('message_fromPassageComponent',[message,'aaaaaa']);
             }
         }
     }
